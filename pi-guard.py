@@ -22,8 +22,8 @@ from email.header import Header
 
 
 
-from_addr = 'fly_3@163.com'
-to_addr = '86800684@qq.com'
+from_addr = 'xxxxxx@163.com'
+to_addr = 'xxxxx@qq.com'
 db_path = ' '
 
 # class configLoader:
@@ -101,7 +101,7 @@ class MailSender:
         recorder = RecoderFactry().getRecoder('error','MailSender')
         try:
             server = smtplib.SMTP('smtp.163.com',25)
-            server.login(from_addr,'3s7f6t0##')
+            server.login(from_addr,'passwd')
     
             msg=MIMEMultipart('alternative')
             msg['Subject'] = self._subject
